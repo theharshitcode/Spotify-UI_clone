@@ -1,0 +1,115 @@
+
+.playbar{
+    /* z-index: 1500; */
+    position: sticky;
+}
+
+.dividedboxfooter{
+    position:fixed;
+    bottom:9;
+    width: 98.%;
+    left:0;
+    right:0;
+    height:76px;
+    background-color:#000000;
+    color:#fff;
+    display:flex;
+    margin-left:5px;
+    margin-right:5px;
+    border-radius: 10px;
+    justify-content:space-between;
+    position: relative;
+    /* border: 2px solid; */
+    height: 84px;
+}
+
+.Playing{
+    height: 40px;
+    gap: 20px;
+        align-items:center;
+        justify-content: center;
+}
+
+.playing{
+    width: 20px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.next img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.songinfo{
+    /* border:2px solid #00c8ff; */
+    width: 33%;
+    align-content: center;
+    padding-left: 10px ;
+    font-weight: bolder;
+    color: #ffffff9f;
+    overflow-wrap: anywhere;
+
+    /* color: #ffffff;
+text-shadow: 0 0 2px #0ff, 0 0 5px #0ff, 0 0 10px #0ff; */
+
+color: #e0e0e0;
+text-shadow: 0 1px 20px rgba(255, 255, 255, 0.599);
+
+
+
+
+}
+
+.midbar{
+    /* border:2px solid #ff0000; */
+    width: 33%;
+    /* position: relative; */
+
+}
+.songtime{
+    /* border:2px solid #00ff00; */
+    width: 33%;
+    /* height: 5px; */
+}
+
+.seekbar{
+    border:1px solid #7b7b7b;
+    width: 33%;
+    height: 4px;
+    /* align-self: center; */
+    /* background-color: #ffffff; */
+    border-radius: 10px;
+    /* place-self: center; */
+    position: absolute;
+    z-index: 22;
+    bottom: 10px ;
+    left: 33.4%;
+    cursor: pointer;
+}
+
+.circle{
+    width: 13px;
+    height: 13px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    /* top: 0; */
+    bottom: -5px;
+    left: 0%;
+    transform: translateX(-50%);
+    z-index: 23;
+    transition: left 0.5s;
+    cursor: pointer;
+
+    color: #e0e0e0;
+box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.599);
+}
+
+.circle:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+    /* cursor: pointer; */
+}

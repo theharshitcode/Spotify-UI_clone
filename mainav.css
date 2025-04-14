@@ -1,0 +1,171 @@
+.mainav {
+    margin-top: 5px;
+    /* border: 1px solid #ccc; */
+    width: 100%;
+    height: 70px;
+}
+
+.mainnav {
+    justify-content: space-between;
+    padding-bottom: 13px;
+padding-left: 10px;
+}
+
+.spotify img{
+    margin-right: 10px;
+}
+
+.search-box {
+    position: relative;
+    width: 400px;
+}
+
+.search-box input {
+    width: 80%;
+    padding: 13px 70px 10px 10px;
+    /* padding: 5px 5px 0 5px; */
+    border-radius: 30px 30px 30px 30px;
+    border: none;
+    /* outline: 1px solid #cccccc55; */
+    background-color: #2d2c2c;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.search-box input::placeholder {
+    color: #888;
+}
+
+.search-box .icon {
+    background-color: #2d2c2c;
+    padding: 4px 5px 0 5px;
+    border-radius: 0 30px 30px 0;
+    /* outline: 1px solid #cccccc55; */
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 1%;
+    /* transform: translateY(-50%); */
+    pointer-events: none;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    align-self: center;
+
+}
+
+
+.search-box .icon svg {
+    width: 30px;
+    height: 30px;
+    fill: rgba(255, 255, 255, 0.573);
+}
+
+.jhopadi {
+    width: 35px;
+    align-self: center;
+    background-color: #323232;
+    /* #2d2c2c; */
+    border: 2px solid #982929;
+    padding: 5px 8px;
+    margin-right: 10px;
+    border-radius: 30px;
+    /* box-sizing: border-box; */
+    border: none;
+
+}
+
+/* .jhopadi :hover {
+    background-color: #aeacac;
+    padding: 5px;
+        width: 25px;
+        border-radius: 30px;
+  
+
+} */
+
+
+.jhopadi a {
+    box-sizing: border-box;
+    /* text-decoration: none; */
+    /* #494848    padding: 5px; */
+    border: none;
+    /* border-radius: 30px; */
+}
+
+.jhopadi a:hover {
+    
+    /* background-color: #ab0000; */
+
+}
+
+.mainbut {
+    align-self: center;
+}
+
+.mainav button {
+    font-weight: bolder;
+    font-size: 15px;
+    background-color: #2d2c2c;
+    color: #d4d0d0;
+    border-radius: 40px;
+    /* border:1px solid #fff; */
+    padding: 7px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.mainbut a {
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.mainav a :hover {
+    background-color: #484747;
+    
+    /* border:1px solid #fff; */
+}
+
+/* .upper{
+    display: none;
+} */
+
+@media (min-width: 1400px) {
+    .upper{
+        display: none;
+    }
+
+    .upper h4 {
+        align-content: center;
+        padding-left: 7px;
+    }
+    .spotify img{
+        margin-right: 10px;
+    }
+    .upper {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainav{
+        display: none;
+    }
+
+    .upper{
+        display: visible;
+    }
+
+    .upper h4 {
+        align-content: center;
+        padding-left: 7px;
+    }
+    
+    .upper {
+        padding: 20px;
+    }
+}

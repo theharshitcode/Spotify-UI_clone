@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <!-- <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css"> -->
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .left {
+            width: 25vw;
+            background-color: #000000;
+            padding: 6px;
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* justify-content: space-between; */
+            animation: slideInLeft 0.5s ease-in-out;
+
+        }
+
+        .right {
+            width: 75vw;
+            background-color: #181818;
+            padding: 20px;
+        }
+
+        .sidebar {
+            padding: 10px 5px;
+            background-color: rgb(23, 23, 23);
+            border-radius: 5px;
+        }
+
+        .actions ul {
+            display: flex;
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        .actions ul li {
+            padding: 10px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-left: 5px;
+            animation: bounceIn 8s ease-in-out;
+        }
+
+        .logo img {
+            width: 30px;
+            filter: invert(1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            padding: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            width: 20px;
+            filter: invert(1);
+        }
+
+        .library {
+            background-color: rgb(23, 23, 23);
+            border-radius: 8px;
+            margin-top: 5px;
+            position: relative;
+            min-height: 50vh;
+            /* justify-content: space-around; */
+            /* display: flex; */
+
+        }
+
+        .library-header {
+            display: flex;
+            align-items: center;
+            /* justify-content: space-around; */
+            padding: 10px 0;
+        }
+
+        .library-header h4 {
+            padding-left: 5px;
+        }
+
+        .library-header .img1 {
+            margin-left: 20px;
+            width: 22px;
+        }
+
+        .actions img {
+            cursor: pointer;
+            /* margin-left: 50px; */
+
+        }
+
+        .actions{
+        margin-left: 90px;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: absolute;
+            bottom: 0;
+            padding-bottom: 10px;
+
+        }
+
+        .footer nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .footer nav ul li {
+            font-size: 12px;
+        }
+
+        .footer button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 30px;
+            width: 90px;
+            margin-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left {
+                width: 100vw;
+                height: auto;
+            }
+
+            .right {
+                width: 100vw;
+                height: 100vh;
+            }
+            @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .footer button:hover {
+            background-color: rgb(188, 0, 0);
+        }
+        }
+    
+    </style> -->
+      <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .left {
+            width: 25vw;
+            background-color: #121212;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            animation: slideInLeft 0.5s ease-in-out;
+        }
+
+        .right {
+            width: 75vw;
+            background-color: #181818;
+            padding: 20px;
+            animation: fadeIn 0.7s ease-in-out;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            animation: bounceIn 1s ease-in-out;
+        }
+
+        .logo img {
+            width: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 10px 0;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        nav ul li {
+            padding: 10px;
+            animation: fadeInUp 1.2s ease-in-out;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            transform: translateX(10px);
+        }
+
+        .icon {
+            width: 20px;
+            filter: invert(1);
+            animation: fadeInUp 1.4s ease-in-out;
+        }
+
+        .library-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            animation: fadeInUp 1.6s ease-in-out;
+        }
+
+        .actions img {
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .actions img:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            animation: fadeInUp 1.8s ease-in-out;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container flex">
+        <!-- Left Sidebar -->
+        <aside class="left">
+            <div class="sidebar bg-color">
+                <div class="logo flex">
+                    <img class="inverter" src="assets/logo.svg" alt="Spotify Logo">
+                    <h4>Spotify</h4>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#"><img class="icon" src="assets/home.svg" alt="Home"> Home</a></li>
+                        <li><a href="#"><img class="icon" src="assets/searchbar.svg" alt="Search"> Search</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="library bg-color">
+                <div class="library-header flex">
+                    <img class="icon img1" src="assets/library.svg" alt="Library">
+                    <h4>Your Library</h4>
+                    <div class="actions flex">
+                        <ul>
+                            <li> <img class="icon" src="assets/arrow.svg" alt="Arrow">
+                            </li>
+                            <li><img class="icon" src="assets/plus.svg" alt="Plus"></li>
+                        </ul>
+                        <!-- <img class="icon" src="assets/arrow.svg" alt="Arrow"> -->
+                        <!-- <img class="icon" src="assets/plus.svg" alt="Plus"> -->
+                    </div>
+                </div>
+                <footer class="footer bg-color">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                            <li><a href="#">About Ads</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                        </ul>
+                    </nav>
+                    <button class="language-btn">English</button>
+                </footer>
+            </div>
+        </aside>
+
+        <!-- Right Content Area -->
+        <main class="right">
+            <h2>Welcome to Spotify Clone</h2>
+            <p>Start playing your favorite music.</p>
+        </main>
+    </div>
+</body>
+
+</html>

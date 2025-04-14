@@ -1,0 +1,80 @@
+.roboto{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+
+
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.color{
+    color: white;
+}
+
+.justify-items{
+    justify-items: center;
+}
+.items-center{
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+
+.inverter{
+    filter: invert(1);
+}
+
+.transparent{
+background-color: transparent;
+}
+
+.bg-color{
+    background-color: #121212;
+}
+
+.borderR{
+    border-radius: 10px;
+    /* padding: 5px; */
+}
+
+.fontsize{
+    font-size:larger ;
+}
+
+.m-1{
+    margin: 5px ;
+}
+
+.p-1{
+    padding-top: 10px;
+    /* padding-left: 2px; */
+    padding-right: 10px;
+}
+
+.inline{
+    display: inline;
+}
+
+.anchor{
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+}
+
+.grid1{
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

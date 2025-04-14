@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" sizes="32x32" type="image/png" href="assets/favicon32.b64ecc03.png">
+    <link rel="stylesheet" href="left.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="right.css">
+    <link rel="stylesheet" href="mainav.css">
+    <link rel="stylesheet" href="bottomPLAYBAR.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("active");
+        }
+    </script>
+    <button class="menu-btn" onclick="toggleSidebar()">
+        &#9776;
+    </button>
+
+    <div class="mainav ">
+        <div class="mainnav uppar borderR fontsize bg-color flex  m-1 p-1">
+            <div class="spotify roboto flex anchor"><img class="inverter  " src="assets/logo.svg" alt="logo">
+                <h4>Spotify</h4>
+            </div>
+            <div class="search-box flex roboto">
+                <div class="jhopadi">
+                    <img class="inverter ghar" src="assets/home.svg" alt="">
+                </div>
+                <input type="text" placeholder="Searching...">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM9.5 14a4.5 4.5 0 110-9 4.5 4.5 0 010 9z" />
+                    </svg>
+                </span>
+            </div>
+            <div class="mainbut roboto">
+                <a href="/">
+                    <button class="signbut">signup</button>
+                </a>
+                <a href="/">
+                    <button class="loginbut">login</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container roboto ">
+
+        <div id="sidebar" class="left sidebar  ">
+            <div class="upper borderR fontsize bg-color  m-1 p-1">
+                <div class="spotify flex anchor"><img class="inverter  " src="assets/logo.svg" alt="logo">
+                    <h4>Spotify</h4>
+                </div>
+                <ul>
+                    <li><img class="inverter width size  items-center " src="assets/home.svg" alt="">Home</li>
+                    <li><img class="inverter width size items-center " src="assets/searchbar.svg" alt="">Search</li>
+                </ul>
+
+
+            </div>
+            <div class="lefty borderR m-1 bg-color">
+                <div class="home">
+                    <div class="flex"><img class=" lib1 inverter width" src="assets/library.svg" alt="/library">
+                        <div class="div">
+                            <h4>Your library</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="ul">
+                            <li><img class="arrow inverter borderR widthli " src="assets/arrow.svg" alt=""></li>
+                            <li><img class="inverter borderR  widthli" src="assets/plus.svg" alt="home"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="listsongs roboto"> <!-- left.css - (line:401) -->
+
+                    <ul>
+
+                    </ul>
+                </div>
+
+                <div class="footer flex  p-1  bg-color">
+                    <div class="link">
+                        <a href="/">
+                            Legal
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a href="/">
+                            Privacy Policy
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a href="/">
+                            Cookies
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a href="/">
+                            About Ads
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a href="/">
+                            Assesibility
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a href="/">
+                            Cookies
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right roboto m-1  borderR bg-color ">
+            <div class="header">
+                <div class="nav roboto">
+                    <a href="#"> <button>All</button></a>
+                    <a href="#"><button>Music</button></a>
+                    <a href="#"><button>Podcasts</button></a>
+                </div>
+            </div>
+            <div class="Spotify-Playlist ">
+                <div class="playlist-header flex">
+                    <div class="albums-sing"><a href="#">
+                            <h2>Popular albums and singles</h2>
+                        </a></div>
+                    <div class="showall"><a href="#">show all</a></div>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div class="card translate">
+                    <img class="cardimg" src="https://i.scdn.co/image/ab67616d00001e02773c5f60bcb309ef8802e4ef"
+                        alt="Album 1">
+                    <div class="card-content">
+                        <span>Raanjhan (From "Do Patti")</span>
+                        <p>Sachet-Parampara, Parampara Tondon , Kausar Munir</p>
+                    </div>
+                    <div>
+                        <svg role="img" class="playbutton" viewBox="0 0 24 24">
+                            <path
+                                d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card translate">
+                    <img class="cardimg" src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3"
+                        alt="Album 2">
+                    <div class="card-content">
+                        <h3>Aashiqui 2</h3>
+                        <p>Mithoon , Ankit Tiwari , Jeet Gannguli</p>
+                        <div class="svg">
+                            <svg role="img" class="playbutton" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="card translate">
+                    <img class="cardimg" src="https://i.scdn.co/image/ab67616d00001e02699cce11792075219c61bb2f"
+                        alt="Album 3">
+                    <div class="card-content">
+                        <h3>Sanam Teri Kasam</h3>
+                        <p>Himesh Reshammiya</p>
+                        <div class="svg">
+
+                            <svg role="img" class="playbutton" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card translate">
+                    <img class="cardimg" src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88"
+                        alt="Album 3">
+                    <div class="cardcontent">
+                        <h3>Glory</h3>
+                        <p>Yo Yo Honey Singh</p>
+                        <div class="svg">
+
+                            <svg role="img" class="playbutton" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card translate">
+                    <img class="cardimg" src="https://i.scdn.co/image/ab67616d00001e021aa5adad8593923dcdf1a7d0"
+                        alt="Album 3">
+                    <div class="card-content">
+                        <h3>Ultimate Love Songs - Arijit Singh</h3>
+                        <p>Arijit Singh</p>
+                        <div class="svg">
+
+                            <svg role="img" class="playbutton" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card translate">
+                    <img class="cardimg" src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88"
+                        alt="Album 3">
+                    <div class="cardcontent">
+                        <h3>Glory</h3>
+                        <p>Yo Yo Honey Singh</p>
+                        <div class="svg">
+
+                            <svg role="img" class="playbutton" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card translate">
+                    <img class="cardimg" src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88"
+                        alt="Album 3">
+                    <div class="cardcontent">
+                        <h3>Glory</h3>
+                        <p>Yo Yo Honey Singh</p>
+                        <div class="svg">
+
+                            <svg role="img" class="playbutton" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card translate">
+                    <img class="cardimg" src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88"
+                        alt="Album 3">
+                    <div class="cardcontent">
+                        <h3>Glory</h3>
+                        <p>Yo Yo Honey Singh</p>
+                        <div class="svg">
+
+                            <svg role="img" class="playbutton" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card translate">
+                    <img class="cardimg" src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88"
+                        alt="Album 3">
+                    <div class="cardcontent">
+                        <h3>Glory</h3>
+                        <p>Yo Yo Honey Singh</p>
+                        <div class="svg">
+
+                            <svg role="img" class="playbutton" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card translate">
+                    <img class="cardimg" src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88"
+                        alt="Album 3">
+                    <div class="cardcontent">
+                        <h3>Glory</h3>
+                        <p>Yo Yo Honey Singh</p>
+                        <div class="svg">
+
+                            <svg role="img" class="playbutton" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card translate">
+                    <img class="cardimg" src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88"
+                        alt="Album 3">
+                    <div class="cardcontent">
+                        <h3>Glory</h3>
+                        <p>Yo Yo Honey Singh</p>
+                        <div class="svg">
+
+                            <svg role="img" class="playbutton" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card translate">
+                    <img class="cardimg" src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88"
+                        alt="Album 3">
+                    <div class="cardcontent">
+                        <h3>Glory</h3>
+                        <p>Yo Yo Honey Singh</p>
+                        <div class="svg">
+
+                            <svg role="img" class="playbutton" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card translate">
+                    <img class="cardimg" src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88"
+                        alt="Album 3">
+                    <div class="cardcontent">
+                        <h3>Glory</h3>
+                        <p>Yo Yo Honey Singh</p>
+                        <div class="svg">
+
+                            <svg role="img" class="playbutton" viewBox="0 0 24 24">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                </path>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="playbar">
+        <!-- <div class="seekbar">
+            <div class="circle"></div>
+        </div> -->
+        <div class="dividedboxfooter flex roboto">
+            <div class="songinfo roboto">
+                <!-- songinfo -->
+            </div>
+            <div class="midbar">
+                <div class="Playing flex">
+                    <div class="next">
+                        <img id="previous" width="20px" class="inverter" height="20px" src="assets/nextleft.svg" fill="white" alt="">
+                    </div>
+                    <div class="next">
+                        <img id="play" class="playing" src="assets/midsongbar.svg" alt="">
+                    </div>
+                    <div class="next">
+                        <img id="next" width="20px" class="inverter" height="20px" src="assets/nextright.svg" fill="white" alt="">
+                    </div>
+                </div>
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="songtime">
+                <!-- songtime -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
